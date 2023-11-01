@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .custom-image {
+            width: 300px;
+            height: 200px;
+            border-radius: 50%; /* Rounded image */
+            object-fit: cover;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #585d58;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #dbdbe7;
+            color: #d10e0e;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin: 10px 0;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        section {
+            background-color: #5860a9;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(136, 69, 69, 0.1);
+        }
+
+        section h2 {
+            color: #dee6ec;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #8f1b4c;
+            color: #fff;
+        }
+
+        /* Add animations */
+        .animated {
+            animation-duration: 1s;
+            animation-fill-mode: both;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .fade-in {
+            animation-name: fadeIn;
+        }
+    </style>
+</head>
+<body>
+    <header class="animated fade-in">
+        <img class="custom-image" src="teja.jpg" alt="Your Profile Image">
+        <h1>TEJA SRI</h1>
+        <p>Student at SRM University</p>
+    </header>
+
+    <section id="contact" class="animated fade-in">
+        <h2>Contact Information</h2>
+        <p>Email: <a href="mailto:ts3363@srmist.edu.in">ts3363@srmist.edu.in</a></p>
+        <p>LinkedIn: <a href="http://www.linkedin.com/in/tejasri-santhanakrishnan-31b25625a">LinkedIn Profile</a></p>
+        <p>Github: <a href="https://github.com/ts3363">GitHub Profile</a></p>
+    </section>
+
+    <section id="education" class="animated fade-in">
+        <h2>Education</h2>
+        <p>University: SRM University</p>
+        <p>Major: Computer Science</p>
+        <p>Specialization in Artificial Intelligence </p>
+    </section>
+
+    <section id="projects" class="animated fade-in">
+        <h2>Projects</h2>
+        <p>Fire fighting robot using aurdino</p>
+        <p>Advanced library management system in oodp </p>
+    </section>
+
+    <section id="certifications" class="animated fade-in">
+        <h2>Certifications</h2>
+        <p>Certified in Semiconductor project for SOLAR TRACKER using Arduino</p>
+        <p>Certified in Activity-based Learning Skills in Mechanical Workshop</p>
+    </section>
+
+    <section id="hackerrank" class="animated fade-in">
+        <h2>Hackerrank</h2>
+        <p>Completed languages like C, C++, JAVA</p>
+    </section>
+
+    <section id="hackathon" class="animated fade-in">
+        <h2>Hackathon</h2>
+        <p>OODP HACK'23</p>
+        <p>Participated in it</p>
+    </section>
+
+ 
+    <section id="marks-obtained" class="animated fade-in">
+        <h2>Marks Scored</h2>
+        <p>Semester 1 = 9.33 GPA</p>
+        <p>Semester 2 = 9.14 GPA</p>
+    </section>
+
+    <section id="co-curricular-activities" class="animated fade-in">
+        <h2>Co-Curricular Activities</h2>
+        <p>Learning to invest in Stock Market</p>
+        <p>Learning the process of Blockchain Development</p>
+    </section>
+
+    <footer class="animated fade-in">
+        <p>&copy; 2023 Teja Sri</p>
+    </footer>
+</body>
+</html>
