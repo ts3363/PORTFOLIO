@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Tejasri S – AI/ML Engineer & Researcher. Portfolio showcasing projects, research publications, and expertise in Deep Learning, Computer Vision, and LLM Integration." />
+  <meta name="keywords" content="Tejasri S, AI Engineer, Machine Learning, Deep Learning, Computer Vision, Portfolio" />
+  <meta property="og:title" content="Tejasri S | AI/ML Engineer & Researcher" />
+  <meta property="og:description" content="Portfolio of Tejasri S – AI/ML Engineer specializing in Deep Learning, Computer Vision, and LLM Integration." />
+  <title>Tejasri S | AI/ML Engineer & Researcher</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ─── Particle Canvas ─── -->
+  <canvas id="particle-canvas"></canvas>
+
+  <!-- ─── Navigation ─── -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo" id="nav-logo-link"></a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about" id="nav-about">About</a></li>
+        <li><a href="#skills" id="nav-skills">Skills</a></li>
+        <li><a href="#experience" id="nav-experience">Experience</a></li>
+        <li><a href="#projects" id="nav-projects">Projects</a></li>
+        <li><a href="#certifications" id="nav-certifications">Certifications</a></li>
+        <li><a href="#achievements" id="nav-achievements">Achievements</a></li>
+        <li><a href="#contact" class="nav-cta" id="nav-contact">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ─── Hero ─── -->
+  <section id="hero">
+    <div class="hero-content">
+      <div class="hero-badge" id="hero-badge">
+        <span class="badge-dot"></span>
+        M.Tech AI · SRM University · CGPA 9.38
+      </div>
+      <h1 class="hero-title" id="hero-title">
+        <span class="line">Hi, I'm</span>
+        <span class="line gradient-text">Tejasri S</span>
+      </h1>
+      <p class="hero-subtitle" id="hero-subtitle">
+        <span id="typed-text"></span><span class="cursor">|</span>
+      </p>
+      <p class="hero-desc" id="hero-desc">
+        AI/ML Engineer passionate about building intelligent systems — from published IEEE research in computer vision and multimodal AI to full-stack production platforms.
+      </p>
+      <div class="hero-actions" id="hero-actions">
+        <a href="#projects" class="btn btn-primary" id="hero-btn-projects">View My Work</a>
+        <a href="#contact" class="btn btn-ghost" id="hero-btn-contact">Get in Touch</a>
+      </div>
+      <div class="hero-stats" id="hero-stats">
+        <div class="stat">
+          <span class="stat-num">3</span>
+          <span class="stat-label">IEEE Publications</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">9.38</span>
+          <span class="stat-label">CGPA / 10</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">1st</span>
+          <span class="stat-label">Hackathon Place</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual" id="hero-visual">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="avatar-ring" id="avatar-ring">
+        <div class="avatar-inner">T</div>
+      </div>
+    </div>
+    <div class="scroll-hint" id="scroll-hint">
+      <span>Scroll to explore</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- ─── About ─── -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-label reveal">WHO I AM</div>
+      <h2 class="section-title reveal">About Me</h2>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>
+            I'm <strong>Tejasri S</strong>, an Integrated M.Tech student in Artificial Intelligence at SRM University, Chennai. With a CGPA of <strong>9.38/10</strong>, I combine strong academic foundations with real-world impact.
+          </p>
+          <p>
+            My research spans <strong>computer vision, multimodal AI, and deep learning</strong> — with <strong>three IEEE conference publications</strong>. I also love building full-stack applications that solve real problems end-to-end.
+          </p>
+          <p>
+            I'm fluent in <strong>Tamil and English</strong>, and I'm deeply passionate about building AI systems that are explainable, reliable, and impactful.
+          </p>
+          <div class="about-info-grid">
+            <div class="info-item">
+              <span class="info-label">📍 Location</span>
+              <span class="info-val">Chennai, India</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">📧 Email</span>
+              <span class="info-val">tejasrisanthanakrishnan@gmail.com</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">📱 Phone</span>
+              <span class="info-val">+91 98417772962</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">🎓 Degree</span>
+              <span class="info-val">M.Tech (Int.) AI · Exp. June 2027</span>
+            </div>
+          </div>
+          <a href="https://github.com/ts3363" target="_blank" rel="noopener" class="btn btn-primary" id="github-link" style="margin-top:1.5rem;display:inline-flex;align-items:center;gap:.5rem;">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            View GitHub
+          </a>
+        </div>
+        <div class="about-card-col reveal">
+          <div class="edu-card">
+            <div class="edu-icon">🎓</div>
+            <div class="edu-info">
+              <h3>SRM University</h3>
+              <p class="edu-degree">M.Tech (Integrated) in Artificial Intelligence</p>
+              <p class="edu-meta">Chennai · Expected June 2027</p>
+              <div class="cgpa-bar-wrap">
+                <span class="cgpa-label">CGPA</span>
+                <div class="cgpa-bar"><div class="cgpa-fill" style="width:93.8%"></div></div>
+                <span class="cgpa-val">9.38 / 10</span>
+              </div>
+            </div>
+          </div>
+          <div class="edu-card" style="margin-top:1rem">
+            <div class="edu-icon">🏫</div>
+            <div class="edu-info">
+              <h3>Gurukulam Matriculation Hr. Sec. School</h3>
+              <p class="edu-degree">Higher Secondary Education</p>
+              <p class="edu-meta">Chennai · June 2019 – June 2022</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Skills ─── -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <div class="section-label reveal">WHAT I KNOW</div>
+      <h2 class="section-title reveal">Technical Skills</h2>
+      <div class="skills-grid">
+
+        <div class="skill-category reveal">
+          <div class="skill-cat-header">
+            <span class="skill-icon">🧠</span>
+            <h3>AI / Machine Learning</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Deep Learning</span>
+            <span class="skill-tag">Machine Learning</span>
+            <span class="skill-tag">Computer Vision</span>
+            <span class="skill-tag">Model Fine-Tuning</span>
+            <span class="skill-tag">Transfer Learning</span>
+            <span class="skill-tag">Reinforcement Learning</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal">
+          <div class="skill-cat-header">
+            <span class="skill-icon">🔧</span>
+            <h3>Frameworks & Tools</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">PyTorch</span>
+            <span class="skill-tag">Scikit-learn</span>
+            <span class="skill-tag">NumPy</span>
+            <span class="skill-tag">Pandas</span>
+            <span class="skill-tag">RESTful APIs</span>
+            <span class="skill-tag">GitHub</span>
+            <span class="skill-tag">Postman</span>
+            <span class="skill-tag">React</span>
+            <span class="skill-tag">Firebase</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal">
+          <div class="skill-cat-header">
+            <span class="skill-icon">💻</span>
+            <h3>Languages & Platforms</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">SQL</span>
+            <span class="skill-tag">HTML</span>
+            <span class="skill-tag">CSS</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">Agile</span>
+            <span class="skill-tag">SDLC</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal">
+          <div class="skill-cat-header">
+            <span class="skill-icon">🚀</span>
+            <h3>Specializations</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag highlight-tag">LLM Integration</span>
+            <span class="skill-tag highlight-tag">RAG Pipelines</span>
+            <span class="skill-tag highlight-tag">Prompt Engineering</span>
+            <span class="skill-tag highlight-tag">Embedding & Vector Indexing</span>
+            <span class="skill-tag highlight-tag">OpenAI API</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Experience ─── -->
+  <section id="experience" class="section">
+    <div class="container">
+      <div class="section-label reveal">WORK HISTORY</div>
+      <h2 class="section-title reveal">Experience</h2>
+      <div class="timeline">
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="tc-header">
+              <div>
+                <h3 class="tc-title">AI & Machine Learning Virtual Intern</h3>
+                <p class="tc-company">APAICTE-EDU SKILLS (AWS Academy)</p>
+              </div>
+              <div class="tc-date">Dec 2024 – Feb 2025</div>
+            </div>
+            <p class="tc-type">Virtual · Cohort 7 · 10 Weeks</p>
+            <ul class="tc-bullets">
+              <li>Completed structured AI-ML training covering supervised & unsupervised learning and model evaluation.</li>
+              <li>Hands-on with Python, NumPy, Pandas, Scikit-learn, and ML workflows; built end-to-end models.</li>
+            </ul>
+            <div class="tc-tags">
+              <span>Python</span><span>NumPy</span><span>Scikit-learn</span><span>ML</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="tc-header">
+              <div>
+                <h3 class="tc-title">Training & Internship Program</h3>
+                <p class="tc-company">Embrion Technologies — India</p>
+              </div>
+              <div class="tc-date">Jan 2024 – Apr 2024</div>
+            </div>
+            <p class="tc-type">Virtual · MSME & ISO Recognized</p>
+            <ul class="tc-bullets">
+              <li>Worked on real-world software and ML problem statements; strengthened software development foundations.</li>
+              <li>Applied ML techniques and executed end-to-end project pipelines.</li>
+            </ul>
+            <div class="tc-tags">
+              <span>Machine Learning</span><span>Software Development</span><span>Python</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Projects ─── -->
+  <section id="projects" class="section section-alt">
+    <div class="container">
+      <div class="section-label reveal">WHAT I'VE BUILT</div>
+      <h2 class="section-title reveal">Projects & Research</h2>
+      <div class="projects-grid">
+
+        <div class="project-card reveal" id="proj-1">
+          <div class="proj-badge ieee">IEEE Published</div>
+          <div class="proj-header">
+            <span class="proj-icon">✍️</span>
+            <div class="proj-meta">
+              <span class="proj-date">July 2025</span>
+              <span class="proj-type">Deep Learning · Transfer Learning</span>
+            </div>
+          </div>
+          <h3 class="proj-title">Offline Signature Verification Using Attention-Enhanced Siamese Network</h3>
+          <p class="proj-desc">Developed a Siamese network with CBAM attention modules and transfer learning for robust offline signature verification — deployable to document security and embedded authentication systems.</p>
+          <ul class="proj-highlights">
+            <li>Designed hybrid loss: BCE + Contrastive + Triplet for discriminative learning</li>
+            <li><strong>94.88% accuracy</strong> and <strong>0.96 AUC</strong> on CEDAR Signature Dataset</li>
+            <li>Presented at IEEE Conference · <strong>Christ University, Bengaluru</strong></li>
+          </ul>
+          <div class="proj-tech">
+            <span>PyTorch</span><span>CBAM</span><span>Siamese Net</span><span>Transfer Learning</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal" id="proj-2">
+          <div class="proj-badge ieee">IEEE Published</div>
+          <div class="proj-header">
+            <span class="proj-icon">🩺</span>
+            <div class="proj-meta">
+              <span class="proj-date">Apr 2026</span>
+              <span class="proj-type">Multimodal AI · Explainable AI</span>
+            </div>
+          </div>
+          <h3 class="proj-title">Confidence-Aware Dynamic Modality Weighting for Multimodal Breast Cancer Risk Assessment</h3>
+          <p class="proj-desc">Designed the CADF framework with dynamic modality weighting and uncertainty estimation, producing explainable and calibrated AI-driven clinical predictions for high-stakes healthcare.</p>
+          <ul class="proj-highlights">
+            <li>AUC <strong>0.91</strong> and ECE <strong>0.034</strong> — production-grade reliability</li>
+            <li>Explainable & calibrated predictions for clinical decision support</li>
+            <li>Robust AI for high-stakes real-world decision making</li>
+            <li>Published in IEEE Xplore · <a href="https://ieeexplore.ieee.org/abstract/document/11554658" target="_blank" rel="noopener" style="color:var(--cyan);text-decoration:underline;">Document Link</a></li>
+          </ul>
+          <div class="proj-tech">
+            <span>Multimodal AI</span><span>Uncertainty Estimation</span><span>XAI</span><span>Clinical AI</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal" id="proj-3">
+          <div class="proj-badge fullstack">Full-Stack</div>
+          <div class="proj-header">
+            <span class="proj-icon">🖥️</span>
+            <div class="proj-meta">
+              <span class="proj-date">May 2024</span>
+              <span class="proj-type">React · Firebase · JavaScript</span>
+            </div>
+          </div>
+          <h3 class="proj-title">Secure & Scalable Online Monitoring Examination System</h3>
+          <p class="proj-desc">Designed and built a secure full-stack web application for online exam administration with role-based access control and async workflow architecture.</p>
+          <ul class="proj-highlights">
+            <li>Real-time video proctoring with tab-switch detection</li>
+            <li>Role-based access control and automated question delivery</li>
+            <li>Production-ready platform reducing manual evaluation effort</li>
+          </ul>
+          <div class="proj-tech">
+            <span>React</span><span>Firebase</span><span>JavaScript</span><span>Video API</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal" id="proj-4">
+          <div class="proj-badge ieee">IEEE Published</div>
+          <div class="proj-header">
+            <span class="proj-icon">🗣️</span>
+            <div class="proj-meta">
+              <span class="proj-date">2026</span>
+              <span class="proj-type">Multimodal AI · Speech Recognition</span>
+            </div>
+          </div>
+          <h3 class="proj-title">AMAC: An Adaptive Multimodal Framework for Dysarthric Speech Recognition and Interactive Rehabilitation</h3>
+          <p class="proj-desc">Proposed AMAC (ReVoice), an adaptive multimodal platform to improve communicative and rehabilitation outcomes for individuals with dysarthric speech using visual speech recognition techniques.</p>
+          <ul class="proj-highlights">
+            <li>Employed a hybrid 3D-CNN and Transformer-based architecture to analyze mouth motion and abnormal speech actions.</li>
+            <li>Leveraged transfer learning on GRID and TORGO datasets to mitigate data scarcity.</li>
+            <li>Implemented a real-time web application using WebSocket-based inference for low-latency processing.</li>
+            <li>Demonstrated superior performance over baseline solutions like Whisper and AV-HuBERT.</li>
+            <li>Published in IEEE Xplore · <a href="https://ieeexplore.ieee.org/document/11554669" target="_blank" rel="noopener" style="color:var(--cyan);text-decoration:underline;">Document Link</a></li>
+          </ul>
+          <div class="proj-tech">
+            <span>3D-CNN</span><span>Transformers</span><span>Transfer Learning</span><span>WebSockets</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Certifications ─── -->
+  <section id="certifications" class="section">
+    <div class="container">
+      <div class="section-label reveal">CREDENTIALS</div>
+      <h2 class="section-title reveal">Certifications</h2>
+      <div class="certs-grid">
+
+        <div class="cert-card reveal" id="cert-1">
+          <div class="cert-logo aws">AWS</div>
+          <div class="cert-info">
+            <h3>Machine Learning Foundations</h3>
+            <p class="cert-issuer">AWS Academy</p>
+            <p class="cert-desc">Supervised & Unsupervised Learning, Feature Engineering, Model Optimization</p>
+          </div>
+          <div class="cert-check">✓</div>
+        </div>
+
+        <div class="cert-card reveal" id="cert-2">
+          <div class="cert-logo aws">AWS</div>
+          <div class="cert-info">
+            <h3>Data Analytics</h3>
+            <p class="cert-issuer">AWS Academy</p>
+            <p class="cert-desc">Data Cleaning, EDA, Visualization, Statistical Insights</p>
+          </div>
+          <div class="cert-check">✓</div>
+        </div>
+
+        <div class="cert-card reveal" id="cert-3">
+          <div class="cert-logo iit">IIT</div>
+          <div class="cert-info">
+            <h3>Programming in Java & ML in Java</h3>
+            <p class="cert-issuer">NPTEL · Indian Institute of Technology</p>
+            <p class="cert-desc">Java programming fundamentals and Machine Learning implementations in Java</p>
+          </div>
+          <div class="cert-check">✓</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Achievements ─── -->
+  <section id="achievements" class="section section-alt">
+    <div class="container">
+      <div class="section-label reveal">RECOGNITION</div>
+      <h2 class="section-title reveal">Achievements & Extras</h2>
+      <div class="achievements-grid">
+
+        <div class="achievement-card reveal gold" id="ach-1">
+          <div class="ach-icon">🥇</div>
+          <div class="ach-content">
+            <h3>1st Place – FinAI Hackathon</h3>
+            <p>Built a FinTech prototype demonstrating rapid AI-driven development. Also secured 3rd Place – FinTech Hackathon (AI/FinTech domain).</p>
+          </div>
+        </div>
+
+        <div class="achievement-card reveal purple" id="ach-2">
+          <div class="ach-icon">🌟</div>
+          <div class="ach-content">
+            <h3>Catalysts of Change 2025</h3>
+            <p>Awarded for Excellence in Teaching Financial Literacy at Chennai Volunteers — recognized for community impact.</p>
+          </div>
+        </div>
+
+        <div class="achievement-card reveal blue" id="ach-3">
+          <div class="ach-icon">📚</div>
+          <div class="ach-content">
+            <h3>Strong Academic Foundation</h3>
+            <p>Coursework in Data Structures & Algorithms, ML Theory, Probability & Statistics, Deep Learning, and Reinforcement Learning.</p>
+          </div>
+        </div>
+
+        <div class="achievement-card reveal teal" id="ach-4">
+          <div class="ach-icon">🗣️</div>
+          <div class="ach-content">
+            <h3>Multilingual Communicator</h3>
+            <p>Fluent in Tamil and English — effective communicator in diverse professional and academic environments.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Contact ─── -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-label reveal">LET'S CONNECT</div>
+      <h2 class="section-title reveal">Get In Touch</h2>
+      <p class="contact-sub reveal">I'm always open to research collaborations, internship opportunities, and interesting AI/ML projects. Let's build something great together.</p>
+      <div class="contact-grid" style="grid-template-columns: 1fr; max-width: 600px; margin: 0 auto;">
+        <div class="contact-links reveal">
+          <a href="mailto:tejasrisanthanakrishnan@gmail.com" class="contact-card" id="contact-email">
+            <span class="cc-icon">📧</span>
+            <div>
+              <span class="cc-label">Email</span>
+              <span class="cc-val">tejasrisanthanakrishnan@gmail.com</span>
+            </div>
+          </a>
+          <a href="tel:+919841772962" class="contact-card" id="contact-phone">
+            <span class="cc-icon">📱</span>
+            <div>
+              <span class="cc-label">Phone</span>
+              <span class="cc-val">+91 98417772962</span>
+            </div>
+          </a>
+          <a href="https://github.com/ts3363" target="_blank" rel="noopener" class="contact-card" id="contact-github">
+            <span class="cc-icon">🐙</span>
+            <div>
+              <span class="cc-label">GitHub</span>
+              <span class="cc-val">github.com/ts3363</span>
+            </div>
+          </a>
+          <a href="#" class="contact-card" id="contact-location">
+            <span class="cc-icon">📍</span>
+            <div>
+              <span class="cc-label">Location</span>
+              <span class="cc-val">Chennai, India</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Footer ─── -->
+  <footer id="footer">
+    <div class="footer-inner">
+      <div class="footer-links">
+        <a href="https://github.com/ts3363" target="_blank" rel="noopener" id="footer-github">GitHub</a>
+        <a href="mailto:tejasrisanthanakrishnan@gmail.com" id="footer-email">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
